@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: patologia_digital
+    tables:
+      - name: Patolog_as_Digital_de__Odontolog_a_ENERO_JULIO2024_xlsx
+      - name: Patologias__digital_de_Laboratorio_de_enero_jul_2024_xlsx
+      - name: Patologias__digital_de_Psicolog_a_ENERO_A_JULIO_2024_xlsx
+      - name: Patologias_digital_de_M__General_enero_jul_2024_xlsx
