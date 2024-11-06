@@ -6,6 +6,7 @@
             fecha fecha,
             m__dico medico,
             edad_de_paciente edad_de_paciente,
+            cast(regexp_extract(edad_de_paciente,r'.+?(\d+)') as integer) edad_sort,
             mes mes,
             a__o ano,""",
     visit_number_prepend="odontlogia"
@@ -14,6 +15,7 @@
         all_cols as (
             select
                 *,
+                '{{visit_number_prepend}}' as servicio,
                 "{{visit_number_prepend}}"
                 || lpad(cast(row_number() over () as string), 7, "0") as visit_number
             from
@@ -33,6 +35,7 @@
         select
             {{ columns }}
             visit_number,
+            servicio,
             regexp_extract(
                 '{{ col.column }}', r'{{regex_extract_enfermedad_o_tratamiento}}'
             ) enfermedad_o_tratamiento,
