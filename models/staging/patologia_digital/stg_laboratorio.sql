@@ -6,6 +6,7 @@
             fecha fecha,
             Laboratorista medico,
             edad_de_paciente edad_de_paciente,
+            cast(regexp_extract(edad_de_paciente,r'.+?(\d+)') as integer) edad_sort,
             mes mes,
             a__o ano,""",
         regex_extract_enfermedad_o_tratamiento="PRUEBAS__(\w+)_"
