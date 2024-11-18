@@ -9,7 +9,7 @@
             cast(regexp_extract(edad_de_paciente,r'.+?(\d+)') as integer) edad_sort,
             mes mes,
             a__o ano,""",
-    visit_number_prepend="odontlogia"
+    visit_number_prepend="odontologia"
 ) %}
     with
         all_cols as (
