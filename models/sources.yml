@@ -4,6 +4,10 @@ sources:
   - name: patologia_digital
     tables:
       - name: Patolog_as_Digital_de__Odontolog_a_ENERO_JULIO2024_xlsx
+        identifier: "Registro digital de Patología Odontología 2024"
       - name: Patologias__digital_de_Laboratorio_de_enero_jul_2024_xlsx
+        identifier: "Registro digital de Laboratorio 2024"
       - name: Patologias__digital_de_Psicolog_a_ENERO_A_JULIO_2024_xlsx
+        identifier: "Registro digital de Psicología 2024"
       - name: Patologias_digital_de_M__General_enero_jul_2024_xlsx
+        identifier: "Registro digital de Patología Medicina General 2024"
